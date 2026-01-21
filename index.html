@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Primary Meta Tags -->
+    <title>genre.live — Discover Music Genres Instantly</title>
+    <meta
+      name="description"
+      content="Find the genres behind any track. No signup, no tracking, just music discovery powered by Last.fm."
+    />
+    <meta
+      name="keywords"
+      content="music genre finder, song genre, track tags, music discovery, Last.fm, genre search, music tags"
+    />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://genre.live/" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://genre.live/" />
+    <meta
+      property="og:title"
+      content="genre.live — Discover Music Genres Instantly"
+    />
+    <meta
+      property="og:description"
+      content="Find the genres behind any track. No signup, no tracking, just music discovery powered by Last.fm."
+    />
+    <meta
+      property="og:image"
+      content="https://genre.live/images/og-image.png"
+    />
+    <meta property="og:site_name" content="genre.live" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://genre.live/" />
+    <meta
+      name="twitter:title"
+      content="genre.live — Discover Music Genres Instantly"
+    />
+    <meta
+      name="twitter:description"
+      content="Find the genres behind any track. No signup, no tracking, just music discovery powered by Last.fm."
+    />
+    <meta
+      name="twitter:image"
+      content="https://genre.live/images/og-image.png"
+    />
+
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#0d9488" />
+    <meta
+      name="theme-color"
+      media="(prefers-color-scheme: dark)"
+      content="#0f0f0f"
+    />
+
+    <!-- Favicons -->
+    <link rel="icon" href="/icons/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style/main.css" />
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "genre.live",
+        "url": "https://genre.live",
+        "description": "Find the genres behind any track. No signup, no tracking, just music discovery powered by Last.fm.",
+        "applicationCategory": "MusicApplication",
+        "operatingSystem": "Any",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        },
+        "isAccessibleForFree": true
+      }
+    </script>
+  </head>
+
+  <body>
+    <header>
+      <a href="/" class="logo">genre.live</a>
+      <button
+        id="theme-toggle"
+        aria-label="Toggle dark mode"
+        title="Toggle theme"
+      >
+        <svg
+          class="icon-moon"
+          width="20"
+          height="20"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M3.32031 11.6835C3.32031 16.6541 7.34975 20.6835 12.3203 20.6835C16.1075 20.6835 19.3483 18.3443 20.6768 15.032C19.6402 15.4486 18.5059 15.6834 17.3203 15.6834C12.3497 15.6834 8.32031 11.654 8.32031 6.68342C8.32031 5.50338 8.55165 4.36259 8.96453 3.32996C5.65605 4.66028 3.32031 7.89912 3.32031 11.6835Z"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+        <svg
+          class="icon-sun"
+          width="20"
+          height="20"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle
+            cx="12"
+            cy="12"
+            r="4"
+            stroke="currentColor"
+            stroke-width="2"
+          />
+          <path
+            d="M12 2V4M12 20V22M4 12H2M22 12H20M5.64 5.64L4.22 4.22M19.78 19.78L18.36 18.36M5.64 18.36L4.22 19.78M19.78 4.22L18.36 5.64"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+          />
+        </svg>
+      </button>
+    </header>
+
+    <main>
+      <section class="hero">
+        <h1>Discover the genre behind any track</h1>
+        <p class="tagline">No accounts. No tracking. Just music.</p>
+        <p class="subtitle">
+          This site has zero analytics or tracking — your searches are
+          completely private.
+          <br />
+          Found an issue?
+          <a
+            href="https://github.com/muhsin7majeed/genre.live/issues"
+            target="_blank"
+            rel="noopener"
+            >Open a GitHub issue</a
+          >.
+        </p>
+        <p class="vibe-note">Made by vibe-coding!</p>
+      </section>
+
+      <section class="search-section">
+        <div class="search-container">
+          <svg
+            class="search-icon"
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle
+              cx="11"
+              cy="11"
+              r="7"
+              stroke="currentColor"
+              stroke-width="2"
+            />
+            <path
+              d="M16 16L20 20"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+            />
+          </svg>
+          <input
+            type="text"
+            id="search-input"
+            placeholder="Search for any song or artist..."
+            autocomplete="off"
+          />
+          <div id="search-results"></div>
+        </div>
+      </section>
+
+      <div id="genre-display"></div>
+
+      <section class="features">
+        <div class="feature">
+          <div class="feature-icon">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                stroke="currentColor"
+                stroke-width="2"
+              />
+              <path
+                d="M8 12L11 15L16 9"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+          <h3>No Sign Up</h3>
+          <p>Start discovering instantly. No accounts needed.</p>
+        </div>
+        <div class="feature">
+          <div class="feature-icon">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                stroke="currentColor"
+                stroke-width="2"
+              />
+              <path
+                d="M15 9L9 15M9 9L15 15"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+            </svg>
+          </div>
+          <h3>No Trackers</h3>
+          <p>Your searches stay private. Zero analytics.</p>
+        </div>
+        <div class="feature">
+          <div class="feature-icon">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12 2L2 7L12 12L22 7L12 2Z"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M2 17L12 22L22 17"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M2 12L12 17L22 12"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+          <h3>Open Source</h3>
+          <p>Fully transparent. Explore the code on GitHub.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <p>
+          Powered by
+          <a href="https://www.last.fm/api" target="_blank" rel="noopener"
+            >Last.fm</a
+          >
+        </p>
+        <p>
+          <a
+            href="https://github.com/muhsin7majeed/genre.live"
+            target="_blank"
+            rel="noopener"
+            >Open Source</a
+          >
+          — Free forever
+        </p>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
